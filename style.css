@@ -43,6 +43,7 @@
         margin: 5px;
     }
     header nav {
+        cursor: pointer;
         justify-content: center;
         background-color: lime;
         cursor: pointer;
@@ -70,12 +71,12 @@
         padding: auto;
         margin: auto;
     }
-    main .left, main .right {
+    main #left, main #right {
         width: 25%;
         margin: auto;
         margin-top: 5px;
     }
-    main .center {
+    main #main {
         width: 40%;
         margin: auto;
         margin-top: 5px;
@@ -95,31 +96,31 @@
         font-size: 0.8em;
         text-align: right;
     }
-    .intro {
+    #intro {
         border: 3px solid limegreen;
         border-radius: 10px;
         margin-bottom: 10px;
         padding: 5px;
     }
-    .calendar {
+    #calendar {
         border: 3px solid limegreen;
         border-radius: 10px;
         margin-bottom: 10px;
         padding: 5px;
     }
-    .twitter {
+    #twitter {
         border: 3px solid dodgerblue;
         border-radius: 10px;
         margin-bottom: 10px;
         padding: 5px;
     }
-    .links {
+    #links {
         border: 3px solid dodgerblue;
         border-radius: 10px;
         margin-bottom: 10px;
         padding: 5px;
     }
-    .links ul {
+    #links ul {
         list-style: none;
     }
     footer {
@@ -151,6 +152,7 @@
         margin: 5px;
     }
     header nav {
+        cursor: pointer;
         justify-content: center;
         background-color: lime;
         cursor: pointer;
@@ -172,10 +174,10 @@
         color: black;
         font-weight: bold;
     }
-    .left, .right {
+    #left, #right {
         display: none;
     }
-    .center {
+    #main {
         width: 95%;
         margin: auto;
         margin-top: 5px;
