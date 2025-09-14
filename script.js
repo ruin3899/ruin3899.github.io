@@ -18,7 +18,7 @@ navList.innerHTML = `
     <li onclick="location.href='index.html'">TOP</li>
     <li onclick="location.href='works.html'">WORKS</li>
     <li onclick="location.href='about.html'">ABOUT</li>
-    <li onclick="location.href='https://forms.gle/2p77JCtYXe8Rsdzz5'" style="border-right: none;">CONTACT</li>
+    <li onclick="location.href='https://forms.gle/2p77JCtYXe8Rsdzz5'" rel="noopener" style="border-right: none;">CONTACT</li>
     `;
 navElement.appendChild(navList);
 headerElement.appendChild(navElement);
@@ -88,8 +88,8 @@ const linksHeading = document.createElement('h2');
 linksHeading.textContent = 'リンク';
 const linksList = document.createElement('ul');
 linksList.innerHTML = `
-    <li><a href="https://twitter.com/ruin3899" target="_blank" rel="noopener">X</a></li>
-    <li><a href="http://www.youtube.com/@ruin3899" target="_blank" rel="noopener">YouTube</a></li>
+    <li><a href="https://twitter.com/ruin3899" target="_blank">X</a></li>
+    <li><a href="http://www.youtube.com/@ruin3899" target="_blank">YouTube</a></li>
     `;
 linksElement.appendChild(linksHeading);
 linksElement.appendChild(linksList);
