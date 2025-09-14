@@ -15,10 +15,10 @@ headerElement.appendChild(headerParagraph);
 const navElement = document.createElement('nav');
 const navList = document.createElement('ul');
 navList.innerHTML = `
-    <li onclick="location.href='index.html'"><a href="index.html">TOP</li>
-    <li onclick="location.href='works.html'"><a href="works.html">WORKS</a></li>
-    <li onclick="location.href='about.html'"><a href="about.html">ABOUT</a></li>
-    <li onclick="location.href='https://forms.gle/2p77JCtYXe8Rsdzz5'" style="border-right: none;"><a href="https://forms.gle/2p77JCtYXe8Rsdzz5">CONTACT</a></li>
+    <li onclick="location.href='index.html'">TOP</li>
+    <li onclick="location.href='works.html'">WORKS</li>
+    <li onclick="location.href='about.html'">ABOUT</li>
+    <li onclick="location.href='https://forms.gle/2p77JCtYXe8Rsdzz5'" style="border-right: none;">CONTACT</li>
     `;
 navElement.appendChild(navList);
 headerElement.appendChild(navElement);
