@@ -1,6 +1,6 @@
 const headerElement = document.createElement('header');
 const headerImg = document.createElement('img');
-headerImg.src = 'sitelogo.png';
+headerImg.src = 'img/sitelogo.png';
 headerImg.alt = 'るいんの遺跡';
 headerImg.style.cursor = 'pointer';
 headerImg.onclick = function () {
@@ -33,12 +33,12 @@ introElement.id = 'intro';
 const introHeading = document.createElement('h2');
 introHeading.textContent = '管理人';
 const introImg = document.createElement('img');
-introImg.src = 'ruinicon.png';
+introImg.src = 'img/ruinicon.png';
 introImg.alt = 'プロフィール画像';
 introImg.style.width = '90%';
 introParagraph = document.createElement('div');
 introParagraph.innerHTML = `<p>名前：<ruby>奏色瑠音<rt>かないろるいん</rt></ruby><br>
-とにかくゲームが好きな人。カドゲ、音ゲなどなどいろんなゲームをやってる。動画編集もやってて、YouTubeに投稿してたりする。一応ゲーム作るのが本業。`
+とにかくゲームが好きな人。カドゲ、音ゲなどなどいろんなゲームをやってる。動画編集もやってる。一応ゲーム作るのが本業。`
 introElement.appendChild(introHeading);
 introElement.appendChild(introImg);
 introElement.appendChild(introParagraph);
