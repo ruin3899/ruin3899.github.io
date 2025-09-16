@@ -4,3 +4,4 @@
 # HTMLファイルとCSSファイルを特定してLFにする
 * .htmltext eol=lf
 * .css text eol=lf
+*.png binary
