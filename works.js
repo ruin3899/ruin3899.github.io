@@ -7,7 +7,8 @@ mainSection.appendChild(mainHeading);
 
 /* 作品のタイトル、本文、リンク、画像URL */
 const worksArray = [
-    ['東方projectクイズ', '東方projectに関する4択クイズです。問題は順次更新中！君は全問正解できるか！？是非挑戦してみてね！！', 'https://ruin3899.github.io/touhouquiz/', 'img/touhouquiz.png'],
+    ['mac用ダウンロードフォルダ削除ツール', '実行（普通のアプリと同様にダブルクリック）すればダウンロードフォルダからファイルが消えます．使用は自己責任でお願いします．', 'files/downloadsDeleter.command', 'img/downloadsDeleter.png'],
+    ['東方projectクイズ', '東方projectに関する4択クイズです。問題は順次更新中！君は全問正解できるか！？是非挑戦してみてね！！', 'https://ruin3899.github.io/touhouquiz/', 'img/touhouquiz.png']
 ];
 for (let i = 0; i < worksArray.length; i++) {
     const workElement = document.createElement('table');
