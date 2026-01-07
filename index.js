@@ -18,7 +18,7 @@ const parentElement = document.createElement('main');
 const mainElement = document.createElement('section');
 mainElement.id = 'main';
 const mainHeader = document.createElement('h1');
-mainHeader.textContent = 'ニュース';
+mainHeader.textContent = 'ブログ';
 mainElement.appendChild(mainHeader);
 /* ニュースの内容 見出し、本文、日付 */
 const newsArray = [
