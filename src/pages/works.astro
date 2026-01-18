@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/works.css';
+
+// works.js のデータをそのまま定義
+const worksArray = [
+    [
+        'mac用ダウンロードフォルダ削除ツール', 
+        '実行（普通のアプリと同様にダブルクリック）すればダウンロードフォルダからファイルが消えます．使用は自己責任でお願いします．なお，URL欄はこのサイト内での相対パスです．絶対パス（リンク全体）はその前にこのサイトのURLがそのまま入ります．', 
+        'files/downloadsDeleter.command', 
+        '/img/downloadsDeleter.png' // パスを / から始まる形に修正
+    ],
+    [
+        '東方projectクイズ', 
+        '東方projectに関する4択クイズです。問題は順次更新中！君は全問正解できるか！？是非挑戦してみてね！！', 
+        'https://ruin3899.github.io/touhouquiz/', 
+        '/img/touhouquiz.png' // パスを / から始まる形に修正
+    ]
+];
+---
+
+<BaseLayout pageTitle="作品集">
+    <h1>作品集</h1>
+
+    <div class="works-container">
+        {worksArray.map((work) => {
+            const url = work[2];
+            // URLが "files" で始まるかどうかを判定
+            const isDownload = url.startsWith('files');
+
+            return (
+                /* isDownload が真なら download 属性を付与し、
+                  偽なら target="_blank" で別タブ開く設定にする 
+                */
+                <a 
+                    href={url} 
+                    download={isDownload ? true : undefined} 
+                    target={isDownload ? undefined : "_blank"}
+                    rel={isDownload ? undefined : "noopener noreferrer"}
+                    style="text-decoration: none; color: inherit;"
+                >
+                    <table class="work" style="cursor: pointer;">
+                        <tr>
+                            <td class="workImage" rowspan="3">
+                                <img src={work[3]} alt={work[0]} class="workImg" />
+                            </td>
+                            <td class="workTitle">{work[0]}</td>
+                        </tr>
+                        <tr>
+                            <td class="workDescription">{work[1]}</td>
+                        </tr>
+                        <tr>
+                            <td class="workLink">{url}</td>
+                        </tr>
+                    </table>
+                </a>
+            );
+        })}
+    </div>
+</BaseLayout>

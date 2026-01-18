@@ -1,0 +1,74 @@
+---
+// 全ページ共通のスタイルをインポート
+import '../styles/style.css';
+
+const { pageTitle } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{pageTitle}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="kiwi-maru-light">
+    <header>
+        <img src='/img/sitelogo.png' alt="るいんの遺跡" style="cursor: pointer;" onclick="window.location.href='/'">
+        <p>奏色瑠音のホームページ</p>
+        <nav>
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li><a href="/works">WORKS</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li style="border-right: none;">
+                    <a href="https://forms.gle/2p77JCtYXe8Rsdzz5" target="_blank" rel="noopener">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="left">
+            <div id="intro">
+                <h2>管理人</h2>
+                <img src='/img/ruinicon.png' alt="プロフィール画像" style="width:90%;">
+                <div>
+                    <p>名前：<ruby>奏色瑠音<rt>かないろるいん</rt></ruby><br>
+                    とにかくゲームが好きな人。カドゲ、音ゲなどなどいろんなゲームをやってる。動画編集もやってる。一応ゲーム作るのが本業。</p>
+                </div>
+            </div>
+            <div id="twitter">
+                <h2>X</h2>
+                <a class="twitter-timeline" href="https://twitter.com/ruin3899?ref_src=twsrc%5Etfw">Tweets by ruin3899</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </section>
+
+        <section id="main">
+            <slot />
+        </section>
+
+        <section id="right">
+            <div id="calendar">
+                <h2>カレンダー</h2>
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&showPrint=0&showTitle=0&src=cnVpbi4zODk5OUBnbWFpbC5jb20&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%230b8043" style="border:solid 1px #777" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="links">
+                <h2>リンク</h2>
+                <ul>
+                    <li><a href="https://twitter.com/ruin3899" target="_blank">X</a></li>
+                    <li><a href="http://www.youtube.com/@ruin3899" target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2025 奏色瑠音 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

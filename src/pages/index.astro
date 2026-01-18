@@ -1,11 +1,26 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/index.css';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// index.jsの配列をそのまま使えます
+const newsArray = [
+    ['MacにはなくてWindowsにはある機能', '気づいたらファイルが山積みになっているダウンロードフォルダ．Windowsだったら時間がたてば自動削除するように設定できるんですけど，macだったらできないんですよね．というわけで，ダウンロードフォルダの内容物を全て消す実行ファイルを作ってみました．一応WORKSのところに入れとくので使ってみてください．', '2026/01/07'],
+    ['クイズのアップデート', 'かなり今更ですが、クイズゲームをアップデートしました。1ミスで終わるモード作って、問題数も増やしました。いつかRPG風にしてみたいなぁ。', '2025/10/13'],
+    ['WORKSページ作成', '作品紹介用のページを作りました。上のメニューのWORKSから飛べます。まだ1本しかありませんが、作り次第追加していきます。', '2025/09/16'],
+    ['ホームページシステム変更', 'ホームページをHTMLに直接書く形からJavaScriptから要素を作る形に変更しました！作業簡略化などのメリットがあります。なお、見た目は全く変わっていません。', '2025/09/14'],
+    ['ホームページ開設しました！', '作品を紹介する用のホームページを開設しました。作業風景等のブログも公開しようと思います。更新をお楽しみに！', '2025/09/12']
+];
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout pageTitle="トップ">
+    <h1>ブログ</h1>
+    <div id="news-area">
+        {newsArray.map((news) => (
+            <article class="news">
+                <h2>{news[0]}</h2>
+                <p>{news[1]}</p>
+                <p class="date">{news[2]}</p>
+            </article>
+        ))}
+    </div>
+</BaseLayout>

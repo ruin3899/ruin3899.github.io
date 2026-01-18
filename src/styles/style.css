@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.kiwi-maru-light {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kiwi-maru-regular {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kiwi-maru-medium {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+/* パソコン用 */
+@media screen and (min-width: 430px) {
+    header {
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        background-color: lightskyblue;
+        margin-bottom: 5px;
+    }
+    header img {
+        margin: 5px;
+        padding: auto;
+    }
+    header p {
+        color: forestgreen;
+        font-size: large;
+        margin: 5px;
+    }
+    header nav {
+        cursor: pointer;
+        justify-content: center;
+        background-color: lime;
+        cursor: pointer;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    header nav ul li {
+        border: 1px solid black;
+        border-right: 1px dotted white;
+        border-left: none;
+        text-align: center;
+        list-style: none;
+        width: 100%;
+        font-weight: bold;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding: auto;
+        margin: auto;
+    }
+    main #left, main #right {
+        width: 25%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    main #main {
+        width: 40%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    #intro {
+        border: 3px solid limegreen;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    #calendar {
+        border: 3px solid limegreen;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    #twitter {
+        border: 3px solid dodgerblue;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    #links {
+        border: 3px solid dodgerblue;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    #links ul {
+        list-style: none;
+    }
+    footer {
+        text-align: center;
+        background-color: lightskyblue;
+        color: forestgreen;
+        padding: 5px;
+        margin-top: 5px;
+    }
+}
+
+/* スマートフォン用 */
+@media screen and (max-width: 430px) {
+    header {
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        background-color: lightskyblue;
+        margin-bottom: 5px;
+    }
+    header img {
+        width: 95%;
+        margin: 5px;
+        padding: auto;
+    }
+    header p {
+        color: forestgreen;
+        font-size: large;
+        margin: 5px;
+    }
+    header nav {
+        cursor: pointer;
+        justify-content: center;
+        background-color: lime;
+        cursor: pointer;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    header nav ul li {
+        border: 1px solid black;
+        border-right: 1px dotted white;
+        border-left: none;
+        text-align: center;
+        list-style: none;
+        width: 100%;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    #left, #right {
+        display: none;
+    }
+    footer {
+        text-align: center;
+        background-color: lightskyblue;
+        color: forestgreen;
+        padding: 5px;
+        margin-top: 5px;
+        width: 100%;
+    }
+}

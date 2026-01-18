@@ -1,0 +1,50 @@
+@media screen and (min-width: 430px) {
+    main #main {
+        width: 40%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .news {
+        border: 3px solid limegreen;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .news h2 {
+        font-size: 1.2em;
+        color: limegreen;
+        margin-bottom: 5px;
+        border-bottom: 1px dotted green;
+    }
+    .date {
+        font-size: 0.8em;
+        text-align: right;
+        border-top: 1px dotted green;
+        margin-top: 5px;
+    }
+}
+
+/* スマホ用 */
+@media screen and (max-width: 430px) {
+    #main {
+        width: 95%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .news {
+        margin: auto;
+        border: 3px solid limegreen;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .news h2 {
+        font-size: 1.2em;
+        color: limegreen;
+        margin-bottom: 5px;
+    }
+    .date {
+        font-size: 0.8em;
+        text-align: right;
+    }
+}

@@ -1,5 +1,6 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  // 自分のGitHub PagesのURL
+  site: 'https://ruin3899.github.io',
+});
