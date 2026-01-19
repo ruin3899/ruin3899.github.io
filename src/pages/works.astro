@@ -19,7 +19,10 @@ const worksArray = [
 ];
 ---
 
-<BaseLayout pageTitle="作品集">
+<BaseLayout
+pageTitle="作品集"
+description="このサイトはゲーム制作者兼CG制作者の奏色瑠音のホームページの作品公開ページです。東方Projectの二次創作やmacで使える便利ツールを公開しています。"
+>
     <h1>作品集</h1>
 
     <div class="works-container">
@@ -42,7 +45,7 @@ const worksArray = [
                     <table class="work" style="cursor: pointer;">
                         <tr>
                             <td class="workImage" rowspan="3">
-                                <img src={work[3]} alt={work[0]} class="workImg" />
+                                <img src={work[3]} alt=`${work[0]}のイメージ画像` class="workImg" />
                             </td>
                             <td class="workTitle">{work[0]}</td>
                         </tr>

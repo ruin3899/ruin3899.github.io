@@ -2,7 +2,7 @@
 // 全ページ共通のスタイルをインポート
 import '../styles/style.css';
 
-const { pageTitle } = Astro.props;
+const { pageTitle, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -11,13 +11,14 @@ const { pageTitle } = Astro.props;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{pageTitle}</title>
+    <meta name="description" content={description}>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body class="kiwi-maru-light">
     <header>
-        <img src='/img/sitelogo.png' alt="るいんの遺跡" style="cursor: pointer;" onclick="window.location.href='/'">
+        <img src='/img/sitelogo.png' alt="サイトロゴ" style="cursor: pointer;" onclick="window.location.href='/'">
         <p>奏色瑠音のホームページ</p>
         <nav>
             <ul>
@@ -35,10 +36,10 @@ const { pageTitle } = Astro.props;
         <section id="left">
             <div id="intro">
                 <h2>管理人</h2>
-                <img src='/img/ruinicon.png' alt="プロフィール画像" style="width:90%;">
+                <img src='/img/ruinicon.png' alt="管理人プロフィール画像" style="width:90%;">
                 <div>
                     <p>名前：<ruby>奏色瑠音<rt>かないろるいん</rt></ruby><br>
-                    とにかくゲームが好きな人。カドゲ、音ゲなどなどいろんなゲームをやってる。動画編集もやってる。一応ゲーム作るのが本業。</p>
+                    とにかくゲームが好きな人。カドゲ、音ゲなどなどいろんなゲームをやってる。動画編集もやってる。自作CGでゲームを制作する。</p>
                 </div>
             </div>
             <div id="twitter">
