@@ -22,8 +22,6 @@
   font-style: normal;
 }
 
-
-
 /* パソコン用 */
 @media screen and (min-width: 430px) {
     header {
@@ -170,4 +168,8 @@
         margin-top: 5px;
         width: 100%;
     }
+}
+
+a {
+    display: block;
 }
