@@ -6,5 +6,9 @@ export default defineConfig({
   // 自分のGitHub PagesのURL
   site: 'https://ruin3899.github.io',
 
-  integrations: [sitemap()],
+  integrations: [sitemap({
+    customPages: [
+        'https://ruin3899.github.io/touhouquiz/', // クイズのページ
+      ],
+  })],
 });
